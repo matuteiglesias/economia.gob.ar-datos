@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Datos Económicos</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h1>Bienvenido al Blog de Datos Económicos</h1>
+    <div id="grafico"></div>
+    <script>
+        // Datos de ejemplo para Plotly
+        var trace1 = {
+            x: ['2023-01-01', '2023-02-01', '2023-03-01'],
+            y: [10, 15, 13],
+            mode: 'lines',
+            type: 'scatter'
+        };
+        var data = [trace1];
+        Plotly.newPlot('grafico', data);
+    </script>
+</body>
+</html>
